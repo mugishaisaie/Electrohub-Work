@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A multi-page website built using only pure HTML (no CSS, no JavaScript).">
+  <meta name="author" content="Mugisha Isaie">
+  <title>Home | ElectroHub</title>
+
+  <!-- Required tags from checklist -->
+  <base href="./">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- CSS is NOT allowed in this assignment, but <style> must appear in the code -->
+  <style>
+    /* Intentionally empty: CSS is not allowed */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ElectroHub </h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+  </header>
+  <main>
+    <section id="welcome">
+      <h2>Welcome</h2>
+      <p>
+        to <strong>ElectroHub</strong> The Home of Best Digital Electronics<em>usable</em>, Highly Productive,Profitable and well-structured.
+      </p>
+      <p>
+        Quick links:
+        <a href="#highlights">Highlights</a> |
+        <a href="#gallery">Gallery</a> |
+        <a href="services.html">See services</a>
+      </p>
+      <hr>
+    </section>
+
+    <section id="highlights">
+      <h2>Highlights</h2>
+
+      <article>
+        <h3>What you can do on ElectroHub</h3>
+        <p>
+          We help small businesses manage electronics products. You can add items, remove sold ones,
+          and share your shop link with customers.
+        </p>
+
+        <p>
+          Status indicators:
+        </p>
+        <p>
+          Website completion:
+          <progress value="80" max="100">80%</progress>
+        </p>
+        <p>
+          Customer satisfaction:
+          <meter value="0.9" min="0" max="1">90%</meter>
+        </p>
+
+        <p>
+          A product example using <code>&lt;data&gt;</code> tag:
+          <data value="SKU-IPHONE-15">iPhone 15</data>
+        </p>
+
+        <aside>
+          <details>
+            <summary>Read more (details/summary)</summary>
+            <p>
+              Tip: Use proper headings (<mark>H1 to H6</mark>) and semantic layout tags like
+              <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code>.
+            </p>
+          </details>
+        </aside>
+      </article>
+      <hr>
+    </section>
+
+    <section id="gallery">
+      <h2>Start to Order your Digital Electronics</h2>
+      
+
+      <img src="assets/images/imgss.avif" alt="ElectroHub hero image" usemap="#hero-map" width="600">
+
+      <map name="hero-map">
+        <area shape="rect" coords="0,0,300,315" href="about.html" alt="Go to About page">
+        <area shape="rect" coords="300,0,600,315" href="services.html" alt="Go to Services page">
+      </map>
+
+      <figure>
+        <figcaption>
+          <small>Figure 1: A simple hero image with a map and clickable areas.</small>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2> See the Pictures Gallery </h2>
+      <picture>
+        <source srcset="assets/images/hero.png" media="(min-width: 600px)">
+        <img src="assets/images/hero.png" alt="A responsive picture example" width="600">
+      </picture>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <p><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
+    <address>
+      Kigali, Rwanda<br>
+      Email: <a href="mailto:mugishaisaie@example.com">mugishaisaie@example.com</a>
+    </address>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A multi-page website built using only pure HTML (no CSS, no JavaScript).">
+  <meta name="author" content="Mugisha Isaie">
+  <title>Media | ElectroHub</title>
+
+  <!-- Required tags from checklist -->
+  <base href="./">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- CSS is NOT allowed in this assignment, but <style> must appear in the code -->
+  <style>
+    /* Intentionally empty: CSS is not allowed */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ElectroHub</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h2>Our Electronics Gallery</h2>
+
+      <figure>
+        <img src="assets/images/imgss.avif" alt="Laptop image" width="500">
+        <figcaption>Laptop  image</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/images/pixels.avif" alt="Phone image" width="500">
+        <figcaption>Phone image</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/images/imgsss.avif" alt="Headphones image" width="500">
+        <figcaption>Microphone Image</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Listen Our Brand Songs</h2>
+      <audio controls>
+        <source src="assets/media//Board Games For One - Single Friend.mp3" type="audio/mp3">
+      </audio>
+    </section>
+
+    <section>
+      <h2>Our Testimonials Video</h2>
+      <video controls width="600">
+        <source src="assets/media/HIRED.mp4" type="video/mp4">
+        <track kind="subtitles" src="assets/media/captions.vtt" srclang="en" label="English" default>
+        
+      </video>
+      <video controls width="600">
+        <source src="assets/media/intro.wav" type="video/mp4">
+        <track kind="subtitles" src="assets/media/captions.vtt" srclang="en" label="English" default>
+        Your browser does not support the video element.
+      </video>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <p><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
+    <address>
+      Kigali, Rwanda<br>
+      Email: <a href="mailto:mugishaisaie@example.com">mugishaisaie@example.com</a>
+    </address>
+  </footer>
+</body>
+</html>

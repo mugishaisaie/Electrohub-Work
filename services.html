@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A multi-page website built using only pure HTML (no CSS, no JavaScript).">
+  <meta name="author" content="Mugisha Isaie">
+  <title>Services | ElectroHub</title>
+
+  <!-- Required tags from checklist -->
+  <base href="./">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- CSS is NOT allowed in this assignment, but <style> must appear in the code -->
+  <style>
+    /* Intentionally empty: CSS is not allowed */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ElectroHub </h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h2>Our Services</h2>
+
+      <h3>Services</h3>
+      <ul>
+        <li>Buying Ele Electronics online</li>
+        <li>Selling Electronics Online</li>
+        <li>Electronics Repair Services</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Create your catalog</li>
+        <li>Share your shop link</li>
+        <li>Sell and update products</li>
+      </ol>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>Catalog</dt>
+        <dd>A list of items you sell.</dd>
+        <dt>Order</dt>
+        <dd>A customer request to buy something.</dd>
+      </dl>
+
+      <hr>
+    </section>
+
+    <section>
+      <h2>Services Table</h2>
+
+      <table border="1">
+        <caption>ElectroHub Service Packages</caption>
+
+        <colgroup>
+          <col>
+          <col>
+          <col>
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Package</th>
+            <th scope="col">Features</th>
+            <th scope="col">Best For</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Starter</td>
+            <td>Basic pages + contact</td>
+            <td>Small shops</td>
+          </tr>
+          <tr>
+            <td>Business</td>
+            <td>Catalog + form orders</td>
+            <td>Growing stores</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              Note: Prices are discussed directly with the client.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Technical Text Tags</h2>
+      <p>
+        Example command: Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your work.
+      </p>
+
+      <pre>
+<code>
+&lt;header&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+</code>
+      </pre>
+
+      <p>
+        Output sample: <samp>Build succeeded!</samp>
+      </p>
+
+      <p>
+        Variable sample: <var>x</var> = 10
+      </p>
+    </section>
+
+    <section>
+      <h2>Embedded Content</h2>
+
+      <p>Embed a PDF using &lt;embed&gt;:</p>
+      <embed src="assets/docs/sample.pdf" type="application/pdf" width="600" height="300">
+
+      <p>Use &lt;object&gt; with a &lt;param&gt;:</p>
+      <object data="assets/docs/sample.pdf" type="application/pdf" width="600" height="300">
+        <param name="view" value="FitH">
+        <p>Your browser cannot display this PDF. Please download it from the assets folder.</p>
+      </object>
+
+      <p>Use an iframe to show another page:</p>
+      <iframe src="index.html" title="Home preview (iframe)" width="600" height="200"></iframe>
+    </section>
+
+    <section>
+      <h2>Template / Noscript / Canvas (fallback)</h2>
+
+      <template>
+        <p>This is inside a template tag and will not display by default.</p>
+      </template>
+
+      <noscript>
+        <p>JavaScript is disabled (this website uses no JavaScript anyway).</p>
+      </noscript>
+
+      <canvas width="300" height="100">
+        Your browser does not support canvas. (Canvas displayed without JS, with fallback text.)
+      </canvas>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <p><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
+    <address>
+      Kigali, Rwanda<br>
+      Email: <a href="mailto:mugishaisaie@example.com">mugishaisaie@example.com</a>
+    </address>
+  </footer>
+</body>
+</html>

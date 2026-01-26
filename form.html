@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A multi-page website built using only pure HTML (no CSS, no JavaScript).">
+  <meta name="author" content="Mugisha Isaie">
+  <title>Form | ElectroHub</title>
+
+  <!-- Required tags from checklist -->
+  <base href="./">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- CSS is NOT allowed in this assignment, but <style> must appear in the code -->
+  <style>
+    /* Intentionally empty: CSS is not allowed */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ElectroHub</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+  </header>
+  <main>
+    <section>
+      <h2>Order / Contact Form</h2>
+      <p>Please fill this form to request a product or ask a question.</p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Basic Information</legend>
+
+          <p>
+            <label for="fullname">Full Name:</label><br>
+            <input id="fullname" name="fullname" type="text" placeholder="Your name" required>
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone:</label><br>
+            <input id="phone" name="phone" type="tel" placeholder="+250..." required>
+          </p>
+
+          <p>
+            <label for="password">Password (demo):</label><br>
+            <input id="password" name="password" type="password" minlength="6">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+
+          <p>
+            <label for="product">Choose a product:</label><br>
+            <select id="product" name="product" required>
+              <optgroup label="Phones">
+                <option value="iphone">iPhone</option>
+                <option value="samsung">Samsung</option>
+              </optgroup>
+              <optgroup label="Computers">
+                <option value="laptop">Laptop</option>
+                <option value="macbook">MacBook</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <p>
+            <label for="color">Choose color:</label><br>
+            <input id="color" name="color" type="color" value="#000000">
+          </p>
+
+          <p>
+            <label for="qty">Quantity:</label><br>
+            <input id="qty" name="qty" type="number" min="1" max="20" value="1">
+          </p>
+
+          <p>
+            <label for="deliveryDate">Preferred delivery date:</label><br>
+            <input id="deliveryDate" name="deliveryDate" type="date">
+          </p>
+
+          <p>
+            <label for="range">Budget range:</label><br>
+            <input id="range" name="range" type="range" min="0" max="100" value="50">
+          </p>
+
+          <p>
+            <label for="search">Search model:</label><br>
+            <input id="search" name="search" type="search" placeholder="e.g. iPhone 15 Pro">
+          </p>
+
+          <p>
+            <label for="website">Website (optional):</label><br>
+            <input id="website" name="website" type="url" placeholder="https://">
+          </p>
+
+          <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
+          </p>
+
+          <p>
+            <label for="city">Choose your city (datalist):</label><br>
+            <input id="city" name="city" list="cities" placeholder="Start typing...">
+            <datalist id="cities">
+              <option value="Kigali">
+              <option value="Huye">
+              <option value="Musanze">
+              <option value="Rubavu">
+            </datalist>
+          </p>
+
+          <p>
+            Payment option:<br>
+            <label><input type="radio" name="payment" value="cash" checked> Cash</label>
+            <label><input type="radio" name="payment" value="momo"> Mobile Money</label>
+          </p>
+
+          <p>
+            <label><input type="checkbox" name="terms" value="yes" required> I accept the terms</label>
+          </p>
+
+          <p>
+            <label for="file">Upload screenshot (optional):</label><br>
+            <input id="file" name="file" type="file" accept=".png,.jpg,.jpeg,.pdf">
+          </p>
+
+          <p>
+            Estimated total :
+            <output name="total">RWF 2000</output>
+          </p>
+
+          <input type="hidden" name="source" value="html-only-assignment">
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <input type="button" value="Extra Button (demo)">
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <p><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
+    <address>
+      Kigali, Rwanda<br>
+      Email: <a href="mailto:mugishaisaie@example.com">info.electrohub.com</a>
+    </address>
+  </footer>
+</body>
+</html>
