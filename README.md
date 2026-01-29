@@ -12,9 +12,9 @@ This is website will help you to buy or sell your desired Digital Electronics
 
 THis Is the Screenshot for Whole Full Electrohub website Pages.
 
-![Home Page](Home-Img.png)
-![About Us Page](AboutUs-Img.png)
-![Services Page](Services-Img.png)
-![Contact Us Page](Contact_img.png)
-![Form Page](Form-img.png)
-![Media Page](media-img.png)
+![Home Page](image.png)
+![About Us Page](image-1.png)
+![Services Page](image-2.png)
+![Contact Us Page](image-3.png)
+![Form Page](image-4.png)
+![Media Page](image-5.png)
