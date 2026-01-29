@@ -7,22 +7,17 @@
   <meta name="author" content="Mugisha Isaie">
   <title>Home | ElectroHub</title>
 
-  <!-- Required tags from checklist -->
   <base href="./">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
-
-  <!-- CSS is NOT allowed in this assignment, but <style> must appear in the code -->
-  <style>
-    /* Intentionally empty: CSS is not allowed */
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
   <header>
-    <h1>ElectroHub </h1>
-
+    <h1>ElectroHub</h1>
     <nav aria-label="Main navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -30,96 +25,115 @@
         <li><a href="media.html">Media</a></li>
       </ul>
     </nav>
-
-    <hr>
   </header>
+
   <main>
-    <section id="welcome">
-      <h2>Welcome</h2>
-      <p>
-        to <strong>ElectroHub</strong> The Home of Best Digital Electronics<em>usable</em>, Highly Productive,Profitable and well-structured.
-      </p>
-      <p>
-        Quick links:
-        <a href="#highlights">Highlights</a> |
-        <a href="#gallery">Gallery</a> |
-        <a href="services.html">See services</a>
-      </p>
-      <hr>
+    <section id="welcome" class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to ElectroHub</h1>
+        <p class="tagline">The Home of Best Digital Electronics: <em>Usable</em>, Highly Productive, Profitable, and Well-Structured.</p>
+        <div class="hero-links">
+          <a href="services.html" class="btn">Our Services</a>
+          <a href="#gallery" class="btn btn-outline">View Gallery</a>
+        </div>
+      </div>
     </section>
 
-    <section id="highlights">
-      <h2>Highlights</h2>
-
+    <section id="highlights" class="info-section">
       <article>
-        <h3>What you can do on ElectroHub</h3>
+        <h2>What You Can Do on ElectroHub</h2>
         <p>
           We help small businesses manage electronics products. You can add items, remove sold ones,
           and share your shop link with customers.
         </p>
-
-        <p>
-          Status indicators:
-        </p>
-        <p>
-          Website completion:
-          <progress value="80" max="100">80%</progress>
-        </p>
-        <p>
-          Customer satisfaction:
-          <meter value="0.9" min="0" max="1">90%</meter>
-        </p>
-
-        <p>
-          A product example using <code>&lt;data&gt;</code> tag:
-          <data value="SKU-IPHONE-15">iPhone 15</data>
-        </p>
-
-        <aside>
-          <details>
-            <summary>Read more (details/summary)</summary>
-            <p>
-              Tip: Use proper headings (<mark>H1 to H6</mark>) and semantic layout tags like
-              <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code>.
-            </p>
-          </details>
-        </aside>
       </article>
-      <hr>
     </section>
 
     <section id="gallery">
-      <h2>Start to Order your Digital Electronics</h2>
+      <h2>Browse Our Digital Electronics</h2>
       
+      <div class="products-grid">
+        <article class="product-card">
+          <img src="assets/images/pexel.avif" alt="Smartphones">
+          <div class="card-content">
+            <h3>Smartphone X</h3>
+            <p>Latest model with high-res camera.</p>
+            <span class="price">RWF 800,000</span>
+          </div>
+        </article>
 
-      <img src="assets/images/imgss.avif" alt="ElectroHub hero image" usemap="#hero-map" width="600">
+        <article class="product-card">
+          <img src="assets/images/imgss.avif" alt="MacBook">
+          <div class="card-content">
+            <h3>MacBook Pro</h3>
+            <p>High performance for professionals.</p>
+            <span class="price">RWF 2,500,000</span>
+          </div>
+        </article>
 
-      <map name="hero-map">
-        <area shape="rect" coords="0,0,300,315" href="about.html" alt="Go to About page">
-        <area shape="rect" coords="300,0,600,315" href="services.html" alt="Go to Services page">
-      </map>
+        <article class="product-card">
+          <img src="assets/images/imnbc.avif" alt="Canon Camera">
+          <div class="card-content">
+            <h3>Canon DSLR</h3>
+            <p>Capture moments in perfect clarity.</p>
+            <span class="price">RWF 600,000</span>
+          </div>
+        </article>
 
-      <figure>
-        <figcaption>
-          <small>Figure 1: A simple hero image with a map and clickable areas.</small>
-        </figcaption>
-      </figure>
+        <article class="product-card">
+          <img src="assets/images/imgn.avif" alt="Microphone">
+          <div class="card-content">
+            <h3>Studio Mic</h3>
+            <p>Crystal clear audio for creators.</p>
+            <span class="price">RWF 150,000</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/images/imgggf.avif" alt="Stage Microphone">
+          <div class="card-content">
+            <h3>Stage Mic</h3>
+            <p>Durable microphone for live events.</p>
+            <span class="price">RWF 120,000</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/images/image 4.avif" alt="Laptop">
+          <div class="card-content">
+            <h3>Gaming Laptop</h3>
+            <p>Ultimate performance for gaming.</p>
+            <span class="price">RWF 1,800,000</span>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2> See the Pictures Gallery </h2>
-      <picture>
-        <source srcset="assets/images/Electronics.jpg" media="(min-width: 600px)">
-        <img src="assets/images/Electronics.jpg" alt="A responsive picture example" width="600">
-      </picture>
+    <section class="extra-features">
+      <h2>Explore More</h2>
+      
+      <figure>
+        <img src="assets/images/imgss.avif" alt="ElectroHub Map" usemap="#hero-map">
+        <map name="hero-map">
+          <area shape="rect" coords="0,0,300,315" href="about.html" alt="Go to About page">
+          <area shape="rect" coords="300,0,600,315" href="services.html" alt="Go to Services page">
+        </map>
+        <figcaption>Click left side for About, right side for Services.</figcaption>
+      </figure>
+
+      <div class="responsive-banner">
+        <picture>
+          <source srcset="assets/images/Electronics.jpg" media="(min-width: 600px)">
+          <img src="assets/images/Electronics.jpg" alt="A responsive picture example">
+        </picture>
+      </div>
     </section>
   </main>
+
   <footer>
-    <hr>
     <p><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
     <address>
-      Kigali, Rwanda<br>
-      Email: <a href="mailto:mugishaisaie@example.com">mugishaisaie@example.com</a>
+      Kigali, Rwanda | Email: <a href="mailto:mugishaisaie@example.com">mugishaisaie@example.com</a>
     </address>
   </footer>
 </body>
