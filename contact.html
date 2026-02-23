@@ -11,8 +11,8 @@
   <base href="./">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-  <!-- External stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <header>
@@ -69,10 +69,63 @@
   <footer>
     <hr>
     <p><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
-    <address>
-      Kigali, Rwanda<br>
-      Email: <a href="mailto:mugishaisaie@example.com">mugishaisaie@example.com</a>
-    </address>
-  </footer>
-</body>
-</html>
+    <body class="bg-gray-50 min-h-screen flex flex-col">
+      <header class="bg-gradient-to-r from-blue-50 to-blue-100 shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center gap-3 mb-4 md:mb-0">
+            <img src="assets/images/favicon.png" alt="ElectroHub Logo" class="w-10 h-10 rounded-full shadow border border-blue-200 bg-white">
+            <span class="text-3xl font-extrabold tracking-tight text-blue-700">ElectroHub</span>
+          </div>
+          <nav aria-label="Main navigation">
+            <ul class="flex flex-row flex-wrap gap-4 text-gray-700 font-medium">
+              <li><a href="index.html" class="px-4 py-2 rounded hover:bg-blue-100 hover:text-blue-600">Home</a></li>
+              <li><a href="about.html" class="px-4 py-2 rounded hover:bg-blue-100 hover:text-blue-600">About</a></li>
+              <li><a href="services.html" class="px-4 py-2 rounded hover:bg-blue-100 hover:text-blue-600">Services</a></li>
+              <li><a href="contact.html" class="px-4 py-2 rounded bg-blue-200 text-blue-700 font-bold">Contact</a></li>
+              <li><a href="form.html" class="px-4 py-2 rounded hover:bg-blue-100 hover:text-blue-600">Form</a></li>
+              <li><a href="media.html" class="px-4 py-2 rounded hover:bg-blue-100 hover:text-blue-600">Media</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="flex-1 container mx-auto px-4 py-8 bg-gradient-to-br from-blue-50 to-blue-100">
+        <section class="bg-white rounded-lg shadow p-8 mb-8">
+          <h2 class="text-2xl font-semibold text-blue-700 mb-4">Contact Us</h2>
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="flex-1">
+              <p class="mb-4 text-gray-700">You can contact us using:</p>
+              <ul class="mb-4 text-gray-700">
+                <li>Email: <a href="mailto:electrohub@example.com" class="text-blue-600 hover:underline">electrohub@example.com</a></li>
+                <li>Phone: <a href="tel:+250780000000" class="text-blue-600 hover:underline">+250 780 000 000</a></li>
+              </ul>
+              <p class="mb-4 text-gray-700">
+                <span class="font-semibold">Office address:</span><br>
+                Kigali, Rwanda<br>
+                <span class="font-semibold">Open:</span> Monday to Friday
+              </p>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Find us With Google Map</h3>
+              <iframe
+                src="https://www.google.com/maps?q=Kigali,+Rwanda&output=embed"
+                width="100%"
+                height="350"
+                title="Google map embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="rounded shadow w-full">
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-white border-t mt-auto">
+        <div class="container mx-auto px-4 py-4 text-center text-gray-600">
+          <p class="mb-2"><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
+          <address class="not-italic">
+            Kigali, Rwanda<br>
+            Email: <a href="mailto:mugishaisaie@example.com" class="text-blue-600 hover:underline">mugishaisaie@example.com</a>
+          </address>
+        </div>
+      </footer>
+    </body>

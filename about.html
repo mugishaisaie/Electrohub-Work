@@ -11,81 +11,75 @@
   <base href="./">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-  <!-- External stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>ElectroHub</h1>
-
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="form.html">Form</a></li>
-        <li><a href="media.html">Media</a></li>
-      </ul>
-    </nav>
-
-    <hr>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+      <h1 class="text-3xl font-bold text-blue-700 mb-2 md:mb-0">ElectroHub</h1>
+      <nav aria-label="Main navigation">
+        <ul class="flex flex-wrap gap-4 text-gray-700 font-medium">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+          <li><a href="services.html" class="hover:text-blue-600">Services</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+          <li><a href="form.html" class="hover:text-blue-600">Form</a></li>
+          <li><a href="media.html" class="hover:text-blue-600">Media</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <article>
-      <h2>About Us</h2>
-      <p>
+  <main class="flex-1 container mx-auto px-4 py-8">
+    <article class="bg-white rounded-lg shadow p-8 max-w-3xl mx-auto">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-4">About Us</h2>
+      <p class="mb-4 text-gray-700">
         ElectroHub is a Rwandan Highly Tech organization In Rwanda. Our mission is to help people
         sell and Buy electronics online in an easy way.
       </p>
-
-      <h3>The Organization Structure Quote & Citation</h3>
-      <blockquote cite="https://www.w3.org/TR/html52/">
-        <p>
-         If you help people, they will help you. Build a community around your product, and
-         customers will become advocates.
-        </p>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">The Organization Structure Quote & Citation</h3>
+      <blockquote cite="https://www.w3.org/TR/html52/" class="border-l-4 border-blue-500 pl-4 italic text-gray-600 mb-4">
+        If you help people, they will help you. Build a community around your product, and
+        customers will become advocates.
       </blockquote>
-      <p>
-        As a short quote: <q> If you help people, they will help you. Build a community around your product, and customers will become advocates.</q> —
-        <cite> Electrohub Team Quote </cite>
+      <p class="mb-4 text-gray-700">
+        As a short quote: <q class="text-blue-700">If you help people, they will help you. Build a community around your product, and customers will become advocates.</q> —
+        <cite class="text-gray-500">Electrohub Team Quote</cite>
       </p>
-
-      <h4>See Our Testimonials</h4>
-      <p>
-        We use <abbr title="HyperText Markup Language">High Speed</abbr> To Deliver Products.
+      <h4 class="text-lg font-semibold text-gray-800 mb-2">See Our Testimonials</h4>
+      <p class="mb-2 text-gray-700">
+        We use <abbr title="HyperText Markup Language" class="underline">High Speed</abbr> To Deliver Products.
         Like : 10<sup>2</sup> And Unstoppable Like: H<sub>2</sub>O.
       </p>
-      <p>
-       That's Why  <small>Always People</small>.  <mark>Praise Our Services</mark>.
+      <p class="mb-4 text-gray-700">
+        That's Why <small class="text-blue-700">Always People</small>. <mark class="bg-yellow-200">Praise Our Services</mark>.
       </p>
-
-      <h5>We're International</h5>
-      <p>
-        In Whole World: <bdi>مرحبا</bdi> (BDI isolates direction).
+      <h5 class="text-md font-semibold text-gray-800 mb-2">We're International</h5>
+      <p class="mb-2 text-gray-700">
+        In Whole World: <bdi class="font-bold">مرحبا</bdi> (BDI isolates direction).
       </p>
-      <p>
-        Every where: <bdo dir="rtl">This line is displayed right-to-left.</bdo>
+      <p class="mb-2 text-gray-700">
+        Every where: <bdo dir="rtl" class="font-mono">This line is displayed right-to-left.</bdo>
       </p>
-      <p>
+      <p class="mb-4 text-gray-700">
         Worldwide:
-        <ruby>漢<rt>Kan</rt>字<rt>ji</rt><rp>(</rp><rt>Kanji</rt><rp>)</rp></ruby>
+        <ruby class="text-lg">漢<rt>Kan</rt>字<rt>ji</rt><rp>(</rp><rt>Kanji</rt><rp>)</rp></ruby>
       </p>
-
-      <h6>Address</h6>
-      <address>
+      <h6 class="text-md font-semibold text-gray-800 mb-2">Address</h6>
+      <address class="not-italic text-gray-600">
         Electrohub<br>
         Kigali Rwanda, Rwanda
       </address>
     </article>
   </main>
-  <footer>
-    <hr>
-    <p><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
-    <address>
-      Kigali, Rwanda<br>
-      Email: <a href="mailto:mugishaisaie@example.com">mugishaisaie@example.com</a>
-    </address>
+  <footer class="bg-white border-t mt-auto">
+    <div class="container mx-auto px-4 py-4 text-center text-gray-600">
+      <p class="mb-2"><small>&copy; <time datetime="2026-01-26">2026</time> ElectroHub. All rights reserved.</small></p>
+      <address class="not-italic">
+        Kigali, Rwanda<br>
+        Email: <a href="mailto:mugishaisaie@example.com" class="text-blue-600 hover:underline">mugishaisaie@example.com</a>
+      </address>
+    </div>
   </footer>
 </body>
 </html>
